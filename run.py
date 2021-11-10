@@ -4,10 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_redirect():
-    return redirect(url_for('hello_world'))
+    return redirect(url_for('home_render'))
 
 @app.route('/home')
-def hello_world():
+def home_render():
    return render_template('html/home.html')
 
 if __name__ == '__main__':
