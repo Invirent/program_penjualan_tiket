@@ -11,3 +11,10 @@ Ini adalah program penjualan tiket untuk mata kuliah Design Analisa Sistem
 
 #Requirement
 1. Minimal menggunakan Python3.6
+
+
+#Must Know
+1. Semua file dengan extension html dimasukkan ke program_penjualan_tiket/templates/html/
+2. Semua file dengan extension css dimasukkan ke program_penjualan_tiket/templates/src/css/
+3. Semua file dengan extension js dimasukkan ke program_penjualan_tiket/templates/src/js/
+4. Semua file backend dimasukkan ke program_penjualan_tiket/backend/
