@@ -8,7 +8,7 @@ def home_redirect():
 
 @app.route('/home')
 def home_render():
-   return render_template('html/home.html')
+   return render_template('home.html')
 
 if __name__ == '__main__':
    app.run("127.0.0.1", 5000, debug=True)
