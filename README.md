@@ -10,11 +10,12 @@ Ini adalah program penjualan tiket untuk mata kuliah Design Analisa Sistem
 6. buka browser dan search http://127.0.0.1:5000/
 
 #Requirement
-1. Minimal menggunakan Python3.6
+1. Minimal menggunakan Python3.7
 
 
 #Must Know
 1. Semua file dengan extension html dimasukkan ke program_penjualan_tiket/templates/html/
-2. Semua file dengan extension css dimasukkan ke program_penjualan_tiket/templates/src/css/
-3. Semua file dengan extension js dimasukkan ke program_penjualan_tiket/templates/src/js/
+2. Semua file dengan extension css dimasukkan ke program_penjualan_tiket/static/css/
+3. Semua file dengan extension js dimasukkan ke program_penjualan_tiket/static/js/
+4. Semua File yang merupakan gambar dimasukkan ke program_penjualan_tiket/static/img/
 4. Semua file backend dimasukkan ke program_penjualan_tiket/backend/
