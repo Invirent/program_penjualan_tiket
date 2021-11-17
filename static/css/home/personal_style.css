@@ -1,0 +1,10 @@
+.before-price{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.after-price{
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+}
