@@ -1,4 +1,5 @@
-from flask import Flask, redirect, render_template, url_for
+from flask import Flask, redirect, render_template, url_for, request
+from backend.models import order_page
 
 app = Flask(__name__)
 
@@ -17,6 +18,11 @@ def order_render():
 @app.route('/promo')
 def promo_render():
    return render_template('promo_page.html')
+
+@app.route('/result', methods=['GET','POST'])
+def load_result():
+   data = request.form
+   order_page.load_result(data)
 
 if __name__ == '__main__':
    app.run("127.0.0.1", 5000, debug=True)
