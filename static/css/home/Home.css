@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/1.svg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("https://www.newshub.co.nz/home/travel/2021/01/the-safest-airlines-to-fly-in-2021-according-to-airlineratings-com/_jcr_content/par/image.dynimg.1280.q75.jpg/v1609815746512/dnht-qantas-a321-xlr-1120.jpg");
   background-position: 50% 50%;
 }
 
@@ -148,7 +148,7 @@
 .u-section-3 .u-image-1 {
   min-height: 590px;
   pointer-events: auto;
-  background-image: url("images/1.svg");
+  background-image: url(../../img/home/1.svg);
   background-position: 50% 50%;
 }
 
