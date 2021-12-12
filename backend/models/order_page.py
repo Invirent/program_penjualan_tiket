@@ -1,7 +1,12 @@
-from backend.database import query_database
-
-def load_result(data):
-    sql_table = query_database.create_table()
-    query_database.insert_table(sql_table)
-    print("=============")
-    print("load result")
+def check_condition(form_input, json_data):
+    flight = []
+    for json in json_data:
+        if json['flight_type'] == form_input['trip_type'] and json['destination_from'] == form_input['destination_from'] and json['destination_to'] == form_input['destination_to']:
+            if json['seat_class'] == form_input['seat_class']:
+                if json['departure_date'] == form_input['departure_date']:
+                    if form_input['trip_type'] == 'one_way':
+                        flight.append(json)
+                    elif form_input['trip_type'] == 'round_trip':
+                        if json['return_date'] == form_input['return_date']:
+                            flight.append(json)
+    return flight

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/order_page/order_pesawat_page.css')}}" media="screen">
     <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/nicepage.js')}}" defer=""></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/order_page.js')}}"></script>
     
     
     <script type="application/ld+json">{
@@ -118,10 +119,10 @@
             <div class="u-form-group u-form-radiobutton u-form-group-1">
               <div class="u-form-radio-button-wrapper">
                 <!-- Select Trip Type -->
-                <input type="radio" name="trip_type" value="One-Way" required="required">
+                <input type="radio" name="trip_type" value="one_way" required="required" onclick="hide_return()">
                 <label class="u-label u-label-1" for="radiobutton">One-Way</label>
                 <br>
-                <input type="radio" name="trip_type" value="Round-Trip" required="required">
+                <input type="radio" name="trip_type" value="round_trip" required="required" onclick="hide_return()">
                 <label class="u-label u-label-2" for="radiobutton">Round-Trip</label>
                 <br>
               </div>
@@ -131,9 +132,7 @@
               <label for="select-8a70" class="u-label u-label-3">From</label>
               <div class="u-form-select-wrapper">
                 <select id="select-8a70" name="destination_from" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
-                  <option value="Item 1">Item 1</option>
-                  <option value="Item 2">Item 2</option>
-                  <option value="Item 3">Item 3</option>
+                  <option value="medan">Medan</option>
                 </select>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
               </div>
@@ -144,9 +143,8 @@
               <label for="select-2a25" class="u-label u-label-4">To</label>
               <div class="u-form-select-wrapper">
                 <select id="select-2a25" name="destination_to" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
-                  <option value="Item 1">Item 1</option>
-                  <option value="Item 2">Item 2</option>
-                  <option value="Item 3">Item 3</option>
+                  <option value="jakarta">Jakarta</option>
+                  <option value="singapore">Singapore</option>
                 </select>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
               </div>
@@ -175,9 +173,9 @@
               <label for="select-7707" class="u-label u-label-8">Seat Class</label>
               <div class="u-form-select-wrapper">
                 <select id="select-7707" name="seat_class" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
-                  <option value="Economy">Economy</option>
-                  <option value="Business">Business</option>
-                  <option value="First-Class">First-Class</option>
+                  <option value="economy">Economy</option>
+                  <option value="business">Business</option>
+                  <option value="first_class">First-Class</option>
                 </select>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
               </div>
