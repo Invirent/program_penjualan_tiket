@@ -25,9 +25,8 @@ def load_result():
    data = request.form
    json_file = open('static/json/flight_ticket.json')
    json_data = json.load(json_file)
-   print(json_data['flight_ticket'])
    result = order_page.check_condition(data , json_data['flight_ticket'])
-   print("after result")
+   return render_template("result_load.html",result=result)
    
 if __name__ == '__main__':
    app.run("127.0.0.1", 5000, debug=True)
