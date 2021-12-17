@@ -97,7 +97,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-border-5 u-border-grey-75 u-image u-image-default u-image-1" src="{{url_for('static',filename='img/order_page/freeseat.jpg')}}" alt="" data-image-width="800" data-image-height="313">
         <span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1">
-          <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 371.656 371.656" style="">
+          <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 371.656 371.656">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-28af"></use>
           </svg>
           <svg class="u-svg-content" viewBox="0 0 371.656 371.656" x="0px" y="0px" id="svg-28af" style="enable-background:new 0 0 371.656 371.656;">
@@ -115,7 +115,7 @@
         <!-- Banner -->
         <h5 class="u-text u-text-default u-text-1">Let's Travel the world with us !!!!!</h5>
         <div class="u-border-2 u-border-custom-color-1 u-custom-color-3 u-form u-form-1">
-          <form action="/result" method="POST" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" name="order_form" style="padding: 30px;">
+          <form action="{{url_for('load_result')}}" method="POST" class="u-clearfix u-form-spacing-30 u-inner-form" name="order_form" style="padding: 30px;">
             <div class="u-form-group u-form-radiobutton u-form-group-1">
               <div class="u-form-radio-button-wrapper" id="radio_input">
                 <!-- Select Trip Type -->
@@ -176,13 +176,9 @@
             </div>
 
             <!-- Submit Button -->
-            <div class="u-align-right u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+            <div class="u-align-right">
+              <input type="submit" value="submit">
             </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
       </div>

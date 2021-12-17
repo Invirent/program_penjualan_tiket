@@ -6,8 +6,8 @@ function hide_return(flight_type){
     }
     else{
         return_date.style.display = 'block'
+        document.getElementById('date-8f51').setAttribute('type','date')
         document.getElementById('date-8f51').setAttribute('required',true)
     }
-    var depart_date = document.getElementById('date-1e63');
-    document.getElementById('date-8f51').value = depart_date.value
 }
+

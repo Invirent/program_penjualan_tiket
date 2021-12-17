@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, url_for, request
+from flask import Flask, redirect, render_template, url_for, request, jsonify
 from backend.models import order_page
 import json
 
@@ -20,13 +20,18 @@ def order_render():
 def promo_render():
    return render_template('promo_page.html')
 
+
 @app.route('/result', methods=['GET','POST'])
 def load_result():
-   data = request.form
-   json_file = open('static/json/flight_ticket.json')
-   json_data = json.load(json_file)
-   result = order_page.check_condition(data , json_data['flight_ticket'])
-   return render_template("result_load.html",result=result)
-   
+   if request.method == "POST":
+      data = request.form
+      json_file = open('static/json/flight_ticket.json')
+      json_data = json.load(json_file)
+      result = order_page.check_condition(data , json_data['flight_ticket'])
+      return render_template("result_load.html",result=result)
+   else:
+      return render_template("order_pesawat_page.html")
+
+
 if __name__ == '__main__':
    app.run("127.0.0.1", 5000, debug=True)
