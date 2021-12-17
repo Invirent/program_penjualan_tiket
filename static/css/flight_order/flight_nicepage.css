@@ -1,0 +1,134 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 531px;
+}
+
+.u-section-1 .u-list-1 {
+  width: 436px;
+  margin: 22px 53px 0 auto;
+}
+
+.u-section-1 .u-repeater-1 {
+  min-height: 408px;
+  grid-auto-columns: 100%;
+  grid-template-columns: 100%;
+  grid-gap: 0px 0px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 10px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 10px;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 10px;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-container-layout-4 {
+  padding: 10px;
+}
+
+.u-section-1 .u-text-4 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-container-layout-5 {
+  padding: 10px;
+}
+
+.u-section-1 .u-text-5 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-container-layout-6 {
+  padding: 10px;
+}
+
+.u-section-1 .u-text-6 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-text-7 {
+  margin: -400px auto 0 64px;
+}
+
+.u-section-1 .u-text-8 {
+  margin: 0 auto 0 64px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 419px;
+  height: 263px;
+  margin: 21px auto 0 35px;
+}
+
+.u-section-1 .u-text-9 {
+  margin: 30px auto 0 64px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 126px;
+  min-height: 41px;
+  height: auto;
+  margin: 22px 55px 38px auto;
+}
+
+.u-section-1 .u-container-layout-7 {
+  padding: 10px 30px;
+}
+
+.u-section-1 .u-text-10 {
+  margin: 0 5px -20px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-7 {
+    margin-top: -306px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 262px;
+  }
+
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-container-layout-7 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 482px;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 340px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 213px;
+    margin-left: 0;
+  }
+}

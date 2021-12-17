@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="utf-8">
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="page_type" content="np-template-header-footer-from-plugin">
-      <title>Result</title>
-      <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
-      <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-      <link rel="stylesheet" href="{{url_for('static',filename='css/nicepage.css')}}" media="screen">
-      <link rel="stylesheet" href="{{url_for('static',filename='css/result/result_load.css')}}" media="screen">
-      <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}" defer=""></script>
-      <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/nicepage.js')}}" defer=""></script>
-      <script type="text/javascript" src="{{url_for('static',filename='js/flight_result.js')}}"></script>
-    </head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nicepage.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/flight_order/flight_nicepage.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/flight_order/flight_ticket.css')}}" media="screen">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/order_page/order_page.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png",
+		"sameAs": []
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 1">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body">
     <header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-2cfa">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1">
@@ -80,41 +93,62 @@
       </div>
     </header>
 
-    <div id="search_result">
-      <h2>Search Result</h2>
-      <div class="container-fluid">
-        {% if result != False %}
-          {% for order in result %}
-          <a href="{{ url_for('flight_order',flight=order) }}">
-            <button class="btn search-result" type="object" >
-              <div class="row" >
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <h4>Flight Number : {{ order['flight_number'] }}</h4>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <span>Depart Date : {{ order['departure_date'] }}</span>
-                    </div>
-                  </div>
-                </div>
+    <section class="u-clearfix u-section-1" id="sec-9195">
+      <form method="POST" action="{{url_for('redirect_payment')}}" name="order_flight">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-border-2 u-border-palette-1-base u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h4 class="u-custom-item u-text u-text-default u-text-1">Flight Type: {{flight['flight_type']}}</h4>
               </div>
-            </button>
-          </a>
-          {% endfor %}
-          {% endif %}
-        {% if result == False %}
-        <div class="row">
-          <div class="col">
-            <h2>There's no flight in this date.</h2>
+            </div>
+            <div class="u-border-2 u-border-palette-1-base u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h4 class="u-custom-item u-text u-text-default u-text-2">Destination From: {{flight['destination_from_str']}}</h4>
+              </div>
+            </div>
+            <div class="u-border-2 u-border-palette-1-base u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h4 class="u-custom-item u-text u-text-default u-text-3">Destination To: {{flight['destination_to_str']}}</h4>
+              </div>
+            </div>
+            <div class="u-border-2 u-border-palette-1-base u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h4 class="u-custom-item u-text u-text-default u-text-4">Departure Date: {{flight['departure_date']}}</h4>
+              </div>
+            </div>
+            {% if flight['return_date'] == null %}
+            <div class="u-border-2 u-border-palette-1-base u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <h4 class="u-custom-item u-text u-text-default u-text-5">Return Date: {{flight['return_date']}}</h4>
+              </div>
+            </div>
+            {% endif %}
+            <div class="u-border-2 u-border-palette-1-base u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-6">
+                <h4 class="u-custom-item u-text u-text-default u-text-6">Seat Type: {{flight['seat_class']}}</h4>
+              </div>
+            </div>
           </div>
         </div>
-        {% endif %}
+        <input type="hidden" value="{{flight}}" name="flight">
+        <h4 class="u-text u-text-default u-text-7">Order : {{flight['flight_number']}}</h4>
+        <h4 class="u-text u-text-default u-text-8">Price/Ticket: Rp. {{flight['price_per_ticket']}}</h4>
+        <img class="u-image u-image-round u-radius-10 u-image-1" src="{{url_for('static',filename='img/e1d731c551859e7e949d0a1fa77675e511fed5f2482888523c8f465219b2bc7604ab4d92fb2d17005945b194f41a560d7c093f9d8356cf69d58bea_1280.jpg')}}" alt="" data-image-width="1280" data-image-height="853">
+        <div class="input-ticket">
+          <label for="num_of_ticket" class="u-label u-label-7">Number of Ticket</label>
+          <input type="number" placeholder="Input Number" id="num_of_ticket" name="number_of_ticket" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white input-number">
+        </div>
+        <div class="u-container-style u-group u-radius-15 u-shape-round u-group-1">
+          <input type="submit" value="submit" class="u-container-layout u-container-layout-7 submit_button">
+        </div>
       </div>
-    </div>
-
+    </form>
+    </section>
+    
+    
+    <!-- Footer -->
     <footer class="u-clearfix u-footer u-grey-80 u-footer" id="sec-5724"><div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
@@ -202,5 +236,5 @@
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

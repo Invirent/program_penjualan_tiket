@@ -1,6 +1,6 @@
 function hide_return(flight_type){
     var return_date = document.getElementById('return_date_form')
-    if (flight_type == 'one_way'){
+    if (flight_type == 'One Way'){
         return_date.style.display = 'none'
         document.getElementById('date-8f51').setAttribute('type','hidden')
     }

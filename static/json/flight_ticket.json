@@ -2,7 +2,7 @@
     "flight_ticket": [
         {
             "flight_number": "00000001",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -16,7 +16,7 @@
         },
         {
             "flight_number": "00000002",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -30,7 +30,7 @@
         },
         {
             "flight_number": "00000003",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -44,7 +44,7 @@
         },
         {
             "flight_number": "00000004",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -58,7 +58,7 @@
         },
         {
             "flight_number": "00000005",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -72,7 +72,7 @@
         },
         {
             "flight_number": "00000006",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -86,7 +86,7 @@
         },
         {
             "flight_number": "00000007",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -100,7 +100,7 @@
         },
         {
             "flight_number": "00000008",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -114,7 +114,7 @@
         },
         {
             "flight_number": "00000009",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -128,7 +128,7 @@
         },
         {
             "flight_number": "00000010",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -142,7 +142,7 @@
         },
         {
             "flight_number": "00000011",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -156,7 +156,7 @@
         },
         {
             "flight_number": "00000012",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "jakarta",
@@ -170,7 +170,7 @@
         },
         {
             "flight_number": "00000013",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -184,7 +184,7 @@
         },
         {
             "flight_number": "00000014",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -198,7 +198,7 @@
         },
         {
             "flight_number": "00000015",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -212,7 +212,7 @@
         },
         {
             "flight_number": "00000016",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -226,7 +226,7 @@
         },
         {
             "flight_number": "00000017",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -240,7 +240,7 @@
         },
         {
             "flight_number": "00000018",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -254,7 +254,7 @@
         },
         {
             "flight_number": "00000019",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -268,7 +268,7 @@
         },
         {
             "flight_number": "00000020",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -282,7 +282,7 @@
         },
         {
             "flight_number": "00000021",
-            "flight_type" : "one_way",
+            "flight_type" : "One Way",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -296,7 +296,7 @@
         },
         {
             "flight_number": "00000022",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -310,7 +310,7 @@
         },
         {
             "flight_number": "00000023",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
@@ -324,7 +324,7 @@
         },
         {
             "flight_number": "00000024",
-            "flight_type" : "round_trip",
+            "flight_type" : "Round Trip",
             "destination_from": "medan",
             "destination_from_str":"Medan",
             "destination_to": "singapore",
