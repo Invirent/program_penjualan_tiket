@@ -21,6 +21,7 @@ def promo_render():
    return render_template('promo_page.html')
 
 
+
 @app.route('/result', methods=['GET','POST'])
 def load_result():
    if request.method == "POST":

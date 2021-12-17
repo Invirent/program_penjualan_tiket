@@ -10,10 +10,10 @@
       <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
       <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
       <link rel="stylesheet" href="{{url_for('static',filename='css/nicepage.css')}}" media="screen">
-      <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/order_page/order_pesawat_page.css')}}" media="screen"> -->
+      <link rel="stylesheet" href="{{url_for('static',filename='css/result/result_load.css')}}" media="screen">
       <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}" defer=""></script>
       <script class="u-script" type="text/javascript" src="{{url_for('static',filename='js/nicepage.js')}}" defer=""></script>
-      <!-- <script type="text/javascript" src="{{url_for('static',filename='js/order_page.js')}}"></script> -->
+      <script type="text/javascript" src="{{url_for('static',filename='js/flight_result.js')}}"></script>
     </head>
 <body>
     <header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-2cfa">
@@ -83,15 +83,33 @@
     <div id="search_result">
       <h2>Search Result</h2>
       <div class="container-fluid">
-
-        {% for order in result.items() %}
+        {% if result != False %}
+          {% for order in result %}
+          <button class="btn search-result" type="object" onclick=flight_redirect(order)>
+            <div class="row" >
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <h4>Flight Number : {{ order['flight_number'] }}</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span>Depart Date : {{ order['departure_date'] }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </button>
+          {% endfor %}
+          {% endif %}
+        {% if result == False %}
         <div class="row">
           <div class="col">
-            <p>{result.flight_number}</p>
+            <h2>There's no flight in this date.</h2>
           </div>
         </div>
-        {% endfor %}
-
+        {% endif %}
       </div>
     </div>
 

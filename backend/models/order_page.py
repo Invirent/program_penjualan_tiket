@@ -9,4 +9,8 @@ def check_condition(form_input, json_data):
                     elif form_input['trip_type'] == 'round_trip':
                         if json['return_date'] == form_input['return_date']:
                             flight.append(json)
-    return flight
+    
+    if len(flight) == 0:
+        return False
+    else:
+        return flight
