@@ -50,11 +50,15 @@ def redirect_payment():
       flight_str = flight_str.replace("'",'"')
       flight_str = flight_str.replace("None","null")
       flight_order = json.loads(flight_str)
-      number_of_ticket = data['number_of_ticket']
+      number_of_ticket = int(data['number_of_ticket'])
+      price_per_qty = int(flight_order['price_per_ticket'])
       flight_order['number_of_ticket'] = number_of_ticket
-      flight_order['total_price'] = flight_order['price_per_ticket'] * number_of_ticket
+      flight_order['total_price'] = price_per_qty * number_of_ticket
       return render_template("render_payment.html", flight_order=flight_order)
 
+@app.route('/confirmation')
+def payment_confirmation():
+   return render_template('payment_confirmation.html')
 
 if __name__ == '__main__':
    app.run("127.0.0.1", 5000, debug=True)
